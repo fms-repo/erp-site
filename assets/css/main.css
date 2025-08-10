@@ -777,6 +777,10 @@ section,
   align-items: center;
   overflow: hidden;
   padding: 100px 0;
+  background-image: url('../img/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero::after {
@@ -786,7 +790,7 @@ section,
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.02) 0px, rgba(255, 255, 255, 0.05) 1px, transparent 1px, transparent 10px);
+  background: linear-gradient(135deg, rgba(3, 17, 25, 0.8) 0%, rgba(27, 38, 44, 0.7) 100%);
   z-index: 1;
 }
 
@@ -820,6 +824,7 @@ section,
   letter-spacing: 1px;
   color: var(--contrast-color);
   margin: 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .hero .main-heading {
@@ -832,6 +837,7 @@ section,
   line-height: 1.1;
   letter-spacing: -1px;
   margin: 0;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 @media (max-width: 1200px) {
@@ -874,20 +880,22 @@ section,
   line-height: 1.7;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   margin: 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 .hero .cta-button .btn {
   display: inline-flex;
   align-items: center;
-  background-color: transparent;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 40%);
-  color: var(--default-color);
+  background-color: rgba(227, 161, 39, 0.9);
+  border: 1px solid var(--accent-color);
+  color: var(--contrast-color);
   padding: 0.75rem 1.5rem;
   border-radius: 50px;
   font-size: 0.9rem;
   font-weight: 600;
   letter-spacing: 1px;
   transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .hero .cta-button .btn span {
@@ -954,15 +962,15 @@ section,
   position: absolute;
   bottom: 10%;
   right: 0;
-  background-color: color-mix(in srgb, var(--surface-color), transparent 50%);
-  backdrop-filter: blur(10px);
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-  border-radius: 10px;
+  background-color: rgba(27, 38, 44, 0.9);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(227, 161, 39, 0.3);
+  border-radius: 15px;
   padding: 1.5rem;
   width: 200px;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
 }
 
 @media (max-width: 991px) {
@@ -980,6 +988,7 @@ section,
   font-weight: 700;
   margin: 0;
   line-height: 1;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .hero .stats-card .stats-label {
@@ -989,6 +998,7 @@ section,
 .hero .stats-card .stats-label p {
   font-size: 0.9rem;
   margin: 0;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .hero .stats-card .stats-arrow {
